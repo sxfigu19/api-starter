@@ -96,6 +96,8 @@ res = res.json() # convert data to Python format
 wop = requests.get(WEB) # get the data
 wop = wop.json() # convert data to Python format
 
+print("...Signing on...")
+print("")
 print("Hello User!")
 print("")
 input("You must 'Enter' to continue")
@@ -122,4 +124,24 @@ else:
 	print("Well then I hope you're as big of a geek as I am.")
 
 print("")
-input("Anyways, I wanted to ")
+input("Anyways, I wanted to share some fun facts about the guy.")
+input("Even if you don't think he's that interesting, who doesn't like hearing random facts?")
+print("")
+print(info["name"] + " actually grew up on the planet " + planet["name"] + ".")
+input(planet["name"] + " is sort of a " + planet["terrain"])
+input("Along with being an " + planet["climate"] + " place.")
+input("And it has a population of about " + planet["population"] + ".")
+
+print("")
+print("Last fun fact of our dear friend today:")
+input("It's pretty uncommon to find someone who has " + info["eye_color"] + " eyes, but " + info["name"] + " does!")
+input("And he's also " + info["hair_color"] + ".")
+
+print("")
+input("I hope you enjoyed some random facts today.")
+input("Actually user... I never got your name.")
+answer = input("What is it by the way?")
+input("Well nice to meet you " + answer + "!")
+input("Hope to speak with you again soon!")
+print("")
+print("...Signing off...")
